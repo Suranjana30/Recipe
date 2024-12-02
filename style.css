@@ -1,0 +1,405 @@
+.nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    background-color: antiquewhite;
+}
+.head a{
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0 1rem;
+    color:black;
+}
+.logo{
+    height:60px;
+}
+.Subscribe{
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    padding:0.7rem 0.7rem;
+    border: none;
+    border-radius: 1.5rem;
+}
+.search{
+    padding:1rem 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color:antiquewhite;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding-left:5.8em;
+}
+@media (max-width: 425px) {
+  .head {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Adjust based on your header height */
+    right: 20px;
+    background-color: antiquewhite;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .head.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .search,
+  .Subscribe {
+    display: none; /* Optionally hide buttons in mobile view */
+  }
+}
+.Image-text{
+    background: url('https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/1/23/0/FN_healthy-fast-food-red-robin-avocado-cobb-salad_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1516723515457.jpeg')center/cover no-repeat;
+    display:flex;
+    padding:6rem 5rem;
+    text-align: center;   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    background-color:rgba(0,0,0,0.4);
+    padding:3em;
+}
+.content h1{
+    font-size:3em;
+    font-family: 'Times New Roman', Times, serif;
+    /* margin:0; */
+}
+@media(max-width:425px){
+  .content h1{
+     font-size:1.3em;
+  }
+}
+.content p{
+    font-size:1.3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+@media(max-width:425px){
+  .content p{
+    font-size:small;
+  }
+}
+.Explore{
+    background-color:darkgoldenrod;
+    color:black;
+    font-weight: bold;
+    padding: 1em 1em;
+    font-size: 15px;
+    border: none;
+    border-radius: 1.5rem;
+}
+@media(max-width:425px){
+  .Explore{
+    /* padding:0.5em 0.5em; */
+    font-size:8px;
+  }
+}
+.Pallete{
+    background-color:antiquewhite;
+    text-align: center;
+}
+.content1{
+    color:black;
+    font-weight: bold;
+    padding:3rem;
+    text-shadow: 2px 2px white;
+}
+.content1 h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content1 p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Explore1{
+    background-color:rgb(243, 117, 13);
+    color:white;
+    padding: 0.5rem 0.5rem;
+    font-size: 15px;
+    border: none;
+    border-radius: 1.5rem;
+}
+.SeeMore{
+     background-color:rgb(190, 190, 248);
+     color:black;
+     padding: 0.5rem 0.5rem;
+     border: none;
+     border-radius: 1.5rem;
+}
+.break{
+    display:grid;
+    justify-content:space-around;
+    grid-template-columns:200px 200px 200px 200px 200px;
+    align-items: center;
+    flex-direction: column;
+    padding:0.6rem 0.6rem;
+
+}
+.break div{
+    background-color: white;
+    padding: 0.5rem 0.5rem;
+}
+.break img{
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.break h3{
+    padding:0;
+    margin:0;
+}
+@media(max-width:425px){
+  .break{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .break div{
+    margin:1em 1em;
+    display:flex;
+    flex-direction: column;
+  }
+  .break img{
+    width:10em;
+  }
+}
+.Recipes{
+    text-align:center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+}
+.Recipes h1{
+    font-size: 1.7em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+    text-shadow: 2px 2px white;
+    padding:0;
+    margin:0;
+    padding: 0.5rem 0.5rem;
+}
+.Recipes p{
+    font-size: 1.2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 2px 2px white;
+}
+.Recipes button{
+    background-color:rgb(243, 117, 13);
+    color:white;
+    padding: 0.5rem 0.5rem;
+    font-size: 12px;
+    border: none;
+    border-radius: 1.5rem;
+}
+@media(max-width:425){
+  .Recipes h1{
+    font-size:1.5em;
+  }
+  .Recipes p{
+    font-size: 1.3em;
+  }
+}
+.Recipe img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius:1.5rem;
+    margin-bottom: 10px;
+}
+.Recipe{
+    display:grid;
+    justify-content:space-around;
+    grid-template-columns:250px 250px 250px 250px 250px;
+    flex-direction: column;
+    padding:1rem 1rem 1rem 1rem;
+    border: none;
+}
+.Recipe div{
+    background-color:cornsilk;
+    padding:0.6rem 0.6rem;
+    border: none;
+    border-radius:1rem;
+    margin:0.4rem 0.4rem;
+}
+
+.Recipe Button{
+    background-color:rgb(243, 117, 13);
+    color:white;
+    padding: 0.5rem 0.5rem;
+    font-size: 12px;
+    border: none;
+    border-radius: 1.5rem;
+}
+.Recipe h3{
+  display:inline-block;
+}
+.Recipe p{
+    display:inline-block;
+}
+@media(max-width:425px){
+    .Recipe{
+      display:flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+    }
+  }
+.Container{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px;
+      gap: 10px;
+      background-color:ghostwhite;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text {
+    flex: 1 1 300px;
+    padding: 20px;
+  }
+  .text h2 {
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    color: #000000;
+  }
+  .text p {
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px white;
+  }
+  .Read {
+    background-color: white;
+    color:black;
+    padding: 1rem 1rem;
+    font-size: 15px;
+    border-radius: 1.5rem;
+    border-color:bisque;
+  }
+  .About{
+    background-color:rgb(243, 117, 13);
+    color:white;
+    padding: 0.5rem 0.5rem;
+    font-size: 15px;
+    border: none;
+    border-radius: 1.5rem;
+  }
+  .image {
+    flex: 2 1 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .Subscribe1{
+    background-color:rgb(236, 114, 139);
+    text-align:center;
+    padding:0.6rem 0.6rem;
+    margin:0.5rem 0.5rem;
+  }
+  #Email{
+    border:none;
+    border-radius: 1.5rem;
+    font:30px;
+  }
+  .end{
+    text-align: center;
+  }
+  .end1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+    padding:1rem 1rem;
+  }
+  .tail{
+    display: flex;
+    gap:40px;
+  }
+  .tail a{
+    text-decoration: none;
+    color: white;
+  }
+  .Socials a{
+    margin:0 1rem;
+    color:white;
+  }
+  .copy{
+    background-color: black;
+    margin:0;
+    padding:0.5rem 0.5rem;
+  }
+  .copy p{
+    color:white;
+    font-size: 15px;
+  }
+@media(max-width:425px){
+  .end1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Socials{
+    margin-top: 1.5em;
+    padding-left:5em;
+  }
+  .end1 div img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .end1 img{
+        align-self: center;
+        padding-left: 6.5em;
+        margin-bottom: 1em;
+  }
+}
+@media(max-width:375px){
+  .menu-toggle{
+    padding-left:3.2em;
+  }
+  .Socials{
+    margin-top: 1.5em;
+    padding-left:3.5em;
+  }
+  .tail{
+    gap:15px;
+    margin:0;
+  }
+  .end1 img{
+    align-self: center;
+    padding-left: 5em;
+    margin-bottom: 1em;
+}
+ .head a{
+  margin:1em 1em;
+ }
+}
